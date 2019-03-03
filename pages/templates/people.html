@@ -1,0 +1,9 @@
+<h1>List of People</h1>
+<br>
+  {% for person in object_list %}
+    <li><b>Name: </b>{{ person.name }}</li>
+    <li><b>Age: </b>{{ person.age }}</li>
+    <li><b>Profession: </b>{{ person.profession }}</li>
+    </br>
+  {% endfor %}
+</ul>
