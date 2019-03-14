@@ -1,0 +1,16 @@
+
+{% block content %}
+  <div>
+    <h2>{{ person.name }}</h2>
+        <b>Age: </b><p>{{ person.age }}</p>
+        <b>Profession: </b><p>{{ person.profession }}</p>
+        <b>Team: </b><p>{{ person.team.name }}</p>
+  </div>
+
+
+{% endblock content %}
+
+<a href="{% url 'person_edit' person.pk %}">+ Edit Person</a>
+<p><a href="{% url 'person_delete' person.pk %}">+ Delete Person</a></p>
+
+
